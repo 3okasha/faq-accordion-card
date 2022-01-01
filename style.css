@@ -1,0 +1,138 @@
+/* variables */
+:root{
+    --veryDarkDesaturatedBlue: hsl(238, 29%, 16%);
+    --softRed: hsl(14, 88%, 65%);
+    --softViolet: hsl(273, 75%, 66%);
+    --softBlue: hsl(240, 73%, 65%);
+    --veryBarkGrayishBlue: hsl(237, 12%, 33%);
+    --darkBrayishBlue: hsl(240, 6%, 50%);
+    --lightGrayishBlue: hsl(240, 5%, 91%);
+}
+
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 5% 15%;
+    background: linear-gradient(var(--softViolet), var(--softBlue));
+    background-repeat: no-repeat;
+    font-size: 12px;
+    font-family: Kumbh Sans;
+}
+h3{
+    font-weight: 700;
+    color: var(--veryDarkDesaturatedBlue);
+}
+p{
+    font-weight: 400;
+    margin: 10px 0;
+    color: var(--veryBarkGrayishBlue);
+}
+hr{
+    background-color: var(--lightGrayishBlue);
+    height: 1px;
+    border: none;
+    width: 107%;
+}
+h1{
+    text-align: center;
+    color: var(--veryDarkDesaturatedBlue);
+}
+/* fonts */
+@font-face {
+    font-family: Kumbh Sans;
+    src: url('./fonts/KumbhSans-VariableFont_wght.ttf');
+}
+
+/* mobile-style */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    background: white;
+    padding: 0 10%;
+    padding-bottom: 10%;
+    margin-top: 40%;
+    border-radius: 25px;
+    margin-bottom: -0% 0;
+}
+
+.img{
+    grid-column: 1/9;
+    max-height: 150px; 
+    position: relative;
+    top: -80%;  
+}
+#top-img{
+    width: 100%;
+}
+#shadow-img{
+    width: 100%;
+    position: relative;
+    top: -50%;
+}
+.content{
+    grid-column: 1/9;
+    /*top: -50%;*/
+}
+ul li{
+    list-style-type: none;
+    margin: 15px 0;
+}
+ul li h3:hover{
+    color: var(--softRed);
+}
+.content img{
+    display: inline;
+    /*display: inline-block;*/
+    float: right;
+    position: relative;
+    bottom: 10px;
+    left: 40px;
+}
+
+/* desktop style */
+@media screen and (min-width:1100px) {
+    .img{
+        grid-column: 1/4; 
+        margin-right: 5%;
+        top: -30%;
+        left: -20%;
+    }
+    .content{
+        grid-column: 5/9;
+        top: 0;
+        margin: 15% 0;
+    }
+    .grid-container {
+        margin-top: 0;
+        padding: 0;
+        max-height: 100%;
+        margin-bottom: 0;
+    }
+    #top-img{
+        content: url('./images/illustration-woman-online-desktop.svg');
+        bottom: 0;
+        width: 125%;
+        z-index: 2;
+    }
+    #shadow-img{
+        content: url('./images/bg-pattern-desktop.svg');
+        left: -90%;
+        width: 220%;
+        z-index: 1;
+        top: -320%;
+    }
+    #cube-img{
+        content: url('./images/illustration-box-desktop.svg');
+        position: relative;
+        left: -25%;
+        top: 180%;
+        z-index: 3;
+    }
+    h1{
+        text-align: left;
+    }
+}

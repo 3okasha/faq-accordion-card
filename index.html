@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js"></script>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="img">
+      <img src="" alt="" id="cube-img">
+      <img src="./images/illustration-woman-online-mobile.svg" id="top-img">
+      <img src="./images/bg-pattern-mobile.svg" id="shadow-img">
+    </div>
+    <div class="content">
+      <h1>FAQ</h1>
+      <ul id="main-ul">
+        <li onclick="showDetails(this.id)" id="1">
+          <h3>How many team members can I invite? </h3>
+          <img src="./images/icon-arrow-down.svg" alt="" id="img01">
+          <p id="id01"></p>
+        </li>
+        <hr>
+        <li onclick="showDetails(this.id)" id="2">
+          <h3>What is the maximum file upload size?</h3>
+          <img src="./images/icon-arrow-down.svg" alt="" id="img02">
+          <p id="id02"></p>
+        </li>
+        <hr>
+        <li onclick="showDetails(this.id)" id="3">
+          <h3> How do I reset my password?</h3>
+          <img src="./images/icon-arrow-down.svg" alt="" id="img03">
+          <p id="id03"></p>
+        </li>
+        <hr>
+        <li onclick="showDetails(this.id)" id="4">
+          <h3>Do you provide additional support?</h3>
+          <img src="./images/icon-arrow-down.svg" alt="" id="img04">
+          <p id="id04"></p>
+        </li>
+        <hr>
+        <li onclick="showDetails(this.id)" id="5">
+          <h3>Do you provide additional support?</h3>
+          <img src="./images/icon-arrow-down.svg" alt="" id="img05">
+          <p id="id05"></p>
+        </li>
+      </ul>
+      <hr>
+    </div>
+  </div>
+</body>
+</html>
