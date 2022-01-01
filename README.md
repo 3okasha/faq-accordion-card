@@ -25,8 +25,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github](https://github.com/3okasha/social-proof-section)
-- Live Site URL: [Github Pages](https://3okasha.github.io/social-proof-section/)
+- Solution URL: [Github](https://github.com/3okasha/faq-accordion-card)
+- Live Site URL: [Github Pages](https://3okasha.github.io/faq-accordion-card/)
 
 ## My process
 
